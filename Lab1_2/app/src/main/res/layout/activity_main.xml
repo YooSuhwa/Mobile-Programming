@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="example.com.lab1_2.MainActivity">
+
+    <TableLayout
+        android:stretchColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Name"
+                />
+           <EditText
+               android:id="@+id/editText"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="type your name"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="clearClicked"
+            android:id="@+id/clear"
+            android:text="CLEAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Set location that right of 'CLEAR' button -->
+        <Button
+            android:onClick="printClicked"
+            android:id="@+id/print"
+            android:text="PRINT"
+            android:layout_toRightOf="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Set location that behind of 'CLEAR' button -->
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clear"/>/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
