@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <!-- This table row include textView and editText -->
+    <TableRow>
+        <TextView android:text="성명" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_span="2" />
+    </TableRow>
+
+    <!-- This table row include textView and RadioButton -->
+    <TableRow>
+        <TextView android:text="성별" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="여" />
+        </RadioGroup>
+    </TableRow>
+
+    <!-- This table row include textView and CheckBox -->
+    <TableRow>
+        <TextView
+            android:text="수신여부" />
+
+        <!-- Layout that contains CheckBoxes To set the horizontally. -->
+        <LinearLayout
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/SMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS" />
+
+            <CheckBox
+                android:id="@+id/eMail"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow>
+        <!-- When you click this button, a new activity opens. -->
+        <!-- Use layout_gravity(right) To place the button on the right side of the parent's view. -->
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:text="등록" />
+    </TableRow>
+
+</TableLayout>
