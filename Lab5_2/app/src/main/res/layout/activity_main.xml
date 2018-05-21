@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facto Thread"
+        android:textSize="35dp"
+        />
+
+    <!-- This linear layout include editText and button. -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Enter a number from the user. -->
+        <EditText
+            android:id="@+id/input"
+            android:hint="n"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <!-- When you click this button(CALCULATE),
+         Do a factorial calculation on the number entered in the editText(@+id/input). -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- Show one digit appears every 500 ms. -->
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:hint="n n-1 n-2 ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Show the final factorial result.-->
+    <TextView
+        android:id="@+id/result"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="= ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
