@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <TableLayout
+        android:stretchColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="이름: "/>
+            <EditText
+                android:id="@+id/name"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="학번: "/>
+            <EditText
+                android:id="@+id/sn"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!-- When click the 추가 button, add at ListView. -->
+        <Button
+            android:id="@+id/BtnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="추가" />
+
+        <!-- When click the 삭제 button, remove from ListView. -->
+        <Button
+            android:id="@+id/BtnDelete"
+            android:text="삭제"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- The data stored in SQLite is shown in this list view.  -->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

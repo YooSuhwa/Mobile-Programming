@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtData"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="#55dddddd"
+        android:gravity="top"
+        android:hint="Enter some lines of data here..."
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <!-- When you click this button(WRITE SD FILE),
+        WRITE user input text in EXTERNAL storage. -->
+    <Button
+        android:id="@+id/ButWrite"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="1. WRITE SD FILE" />
+
+    <!-- When you click this button(CLEAR SCREEN),
+       CLEAR content of edit text -->
+    <Button
+        android:id="@+id/ButClear"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="2. CLEAR SCREEN" />
+
+    <!-- When you click this button(READ SD FILE),
+       READ content in EXTERNAL storage -->
+    <Button
+        android:id="@+id/ButRead"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="3. READ SD FILE" />
+
+    <!-- When you click this button(FINISH APP),
+        FINISH this lab6 app. -->
+    <Button
+        android:id="@+id/ButFinish"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="4. FINISH APP" />
+
+</LinearLayout>

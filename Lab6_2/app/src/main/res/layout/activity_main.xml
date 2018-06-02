@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*">
+
+    <TableRow>
+
+        <TextView
+            android:layout_span="3"
+            android:gravity="center"
+            android:text="Shared preference example"
+            android:textSize="20dp" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="20dp">
+
+        <TextView android:text="학번" />
+
+        <EditText
+            android:id="@+id/sn"
+            android:layout_span="2"
+            android:hint="..." />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="20dp">
+
+        <TextView android:text="이름" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_span="2"
+            android:hint="..." />
+    </TableRow>
+
+    <TableRow>
+
+        <!-- When you click this button(불러오기),
+            Data is received using Shared preference.-->
+        <Button
+            android:id="@+id/BtnBool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="불러오기" />
+
+        <!-- When you click this button(저장하기),
+           Data is saved in Shared preference-->
+        <Button
+            android:id="@+id/BtnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장하기" />
+
+        <!-- When you click this button(초기화),
+               CLEAR content of edit texts -->
+        <Button
+            android:id="@+id/ButInit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기화" />
+    </TableRow>
+</TableLayout>
